@@ -13,7 +13,11 @@
         const CLASSNAME_HIGHLIGHTED = 'highlighted';
 
         const canSmoothScroll = 'scrollBehavior' in document.documentElement.style;
-        const docsVersion = elInput.getAttribute('data-docs-version');
+
+        //Extract version from the URL path
+        const urlPath = window.location.pathname;
+        const versionMatch = urlPath.match(/(\d+\.\d+)/);
+        const docsVersion = versionMatch ? versionMatch[1] : elInput.getAttribute('data-docs-version');
 
         let _showingResults = false,
             animationFrame,
@@ -21,6 +25,11 @@
             lastQuery;
 
         const abortControllers = [];
+
+        const navToResultsPage = () => {
+            const query = encodeURIComponent(elInput.value);
+            window.location.href = `/docs/latest/search.html?q=${query}`;
+        }
 
         elInput.addEventListener('input', e => {
             debounceInput();
@@ -105,8 +114,7 @@
                 const controller = new AbortController();
                 abortControllers.unshift(abortControllers);
                 const startTime = Date.now();
-                const response = await fetch(`https://9d808viozl.execute-api.us-west-2.amazonaws.com/prod/search?q=${query}&v=${docsVersion}`, { signal: controller.signal });
-                const data = await response.json();
+                const response = await fetch(`https://9d808viozl.execute-api.us-west-2.amazonaws.com/prod/search?q=${query}&v=${docsVersion}`, { signal: controller.signal });                const data = await response.json();
                 const searchResultClassName = 'top-banner-search--field-with-results--field--wrapper--search-component--search-results--result';
                 recordEvent('view_search_results', {
                     search_term: query,
@@ -249,7 +257,12 @@
 
         const navToHighlightedResult = () => {
             const searchResultClassName = 'top-banner-search--field-with-results--field--wrapper--search-component--search-results--result';
-            elResults.querySelector(`.${searchResultClassName}.highlighted a[href]`)?.click?.();
+            const element = elResults.querySelector(`.${searchResultClassName}.highlighted a[href]`);
+            if (element) {
+                element.click?.();
+            } else {
+                navToResultsPage();
+            }
         };
 
         const recordEvent = (name, data) => {
