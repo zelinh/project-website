@@ -14,25 +14,27 @@ hero_images:
 #    path: /assets/media/opensearchcon/2024/OSC2024_NASF_Web-banner_1440x360.png
 #    alt: OpenSearchCon 2024 hero banner image.
 conference_sections_button_stack:
+  - label: Search Relevance Training
+    url: /events/opensearchcon/2024/north-america/osc-training.html
   - label: CFP
     url: /events/opensearchcon/2024/north-america/cfp.html
   - label: Register
     url: /events/opensearchcon/2024/north-america/register.html
 #  - label: Speakers
 #    url: /events/opensearchcon/2024/north-america/speakers/index.html
-#  - label: Sessions 
-#    url: /events/opensearchcon/2024/north-america/sessions/index.html
+  - label: Sessions 
+    url: /events/opensearchcon/2024/north-america/sessions/index.html
 #  - label: Exhibitors
 #    url: /events/opensearchcon/2024/north-america/exhibitors/index.html
-#  - label: Workshops
-#    url: /events/opensearchcon/2024/north-america/workshops/index.html
-#  - label: Unconference
-#    url: /events/opensearchcon/2024/north-america/unconference/index.html
-#related_articles:
-#  - title: Using Fluent Bit and OpenSearch with Bottlerocket and Kubelet logs
-#    url: /blog/bottlerocket-k8s-fluent-bit/
-#    category: community
-#    date: 'Wed, Jul 20, 2022'
+  - label: Workshops
+    url: /events/opensearchcon/2024/north-america/workshops/index.html
+  - label: Unconference
+    url: /events/opensearchcon/2024/north-america/unconference/index.html
+related_articles:
+  - title: OpenSearchCon San Francisco - Schedule and CFP Updates
+    url: /blog/opensearchcon-san-francisco-schedule-and-cfp-updates/
+    category: community
+    date: 'Fri, Jul 21, 2024'
 #featured_sessions:
 #  - title: Opening Keynote
 #    url: /events/opensearchcon/2022/north-america/sessions/keynote.html
@@ -67,13 +69,7 @@ Join us  September 24 through  September 26, 2024 at the [Hilton Union Square in
 </div>
 What makes the community want to attend OpenSearchCon? Beyond the opportunity to network with peers and commune with passionate open sourcers, OpenSearchCon is where you come to hear compelling stories, learn differentiated use cases, and gain educational insights shared by our community. If you have a story to tell or an idea you’d like to present to the community, our Call for Presentations (CfP) for OpenSearchCon North America is now open—go [here](/events/opensearchcon/2024/north-america/cfp.html) and submit by June 28, 2024 at 11:59pm EST to submit your abstract.
 
-<div class="redesign-button-pair--wrapper">
-            <div class="redesign-button--wrapper redesign-button--wrapper__text-only__dark">
-                <a href="/events/opensearchcon/2024/north-america/cfp.html" class="redesign-button--anchor">
-                    Submit a Presentation
-                </a>
-            </div>
-</div>
+The CfP for OpenSearchCon 2024 North America is now *closed*.
 
 
 ### Book your hotel for OpenSearchCon
@@ -81,6 +77,10 @@ What makes the community want to attend OpenSearchCon? Beyond the opportunity to
 OpenSearchCon North America 2024 has a [room block set aside for attendees at the Hilton Union Square in San Francisco](https://book.passkey.com/e/50823627) September 23 through 26, 2024 at $239 a night plus taxes, single occupancy. If you prefer to book by phone, you can contact 1-800-HILTONS and use the group code: AOS and the reservation agent will be able to expedite the booking process. *Please note, rooms will most likely sell out in advance of the room block close dates. We encourage you to book your room by September 1, 2024 to secure a room at the conference rate.*
 
 **[Book your discounted hotel room](https://book.passkey.com/e/50823627)**
+
+### NEW for Search Professionals: Grow your skill set with hands-on training
+
+This year, search relevance experts and OpenSearch partners [OpenSource Connections](https://opensourceconnections.com/) will lead a one-day intensive training course, "Think Like a Relevance Engineer with OpenSearch," on Thursday, September 26 at OpenSearchCon North America. This paid training is specifically designed to help OpenSearch users learn how to tune their OpenSearch installations for success with practical, hands-on guidance. Find out more about this training [here](/events/opensearchcon/2024/north-america/osc-training.html) or jump straight to your discounted registration with OpenSource Connections [here](https://www.eventbee.com/v/opensearch-tlre-intensive-at-opensearchcon-us-24/event?eid=237312684#/tickets).
 
 
 ### What is OpenSearchCon?
