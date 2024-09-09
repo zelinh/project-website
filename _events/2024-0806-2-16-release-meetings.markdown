@@ -1,6 +1,6 @@
 ---
-calendar_date: '2024-08-02'
-eventdate: 2024-08-02 09:00:00 -0700
+calendar_date: '2024-08-13'
+eventdate: 2024-08-13 09:00:00 -0700
 title: OpenSearch 2.16.0 Release Meetings
 online: true
 signup:
@@ -23,19 +23,27 @@ On-going release discussions in the [#releases](https://opensearch.slack.com/arc
 
 **August 2nd 2024 - 9AM PDT**
 
-* Go / No-Go voting 
+* 1st Go / No-Go voting call
 
 **August 05th 2024 - 9AM PDT**
 
-* Go / No-Go voting 
+* 2nd Go / No-Go voting call
 
-**August 06th 2024 - 2:00PM PDT**
+**August 06th 2024 - 9:30AM PDT**
+
+* 3rd Go / No-Go voting call
+
+**August 07th 2024 - 8:30AM PDT**
+
+* 4th Go / No-Go voting call
+
+**August ~~06th~~ 07th 2024 - 2:00PM PDT**
 
 * [Release / Post release](https://github.com/opensearch-project/opensearch-build/wiki/Releasing-the-Distribution#release) (Release day!) [Release manager, leadership team, Repository owners ]
 
 * Last possible date 08/06/2024 per the [Releases schedule](https://opensearch.org/releases.html).
 
-**August 12th 2024 - 9:00AM PDT**
+**August 13th 2024 - 9:00AM PDT**
 
 * [Retrospective](https://github.com/opensearch-project/opensearch-build/issues/4847) - Let's do a retro on the 2.16.0 release as a community.
 

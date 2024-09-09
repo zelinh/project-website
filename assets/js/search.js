@@ -8,7 +8,7 @@
         const elOverlay = document.querySelector('.top-banner-search--overlay');
         const elSpinner = document.querySelector('.top-banner-search--field-with-results--field--wrapper--search-component--search-spinner');
         if (!elInput || !elResults || !elOverlay) return;
-        
+
         const CLASSNAME_SPINNING = 'spinning';
         const CLASSNAME_HIGHLIGHTED = 'highlighted';
 
@@ -55,7 +55,7 @@
 
                 case 'Enter':
                     e.preventDefault();
-                    navToHighlightedResult();
+                    navToResult();
                     break;
             }
         });
@@ -255,7 +255,12 @@
             }
         };
 
-        const navToHighlightedResult = () => {
+        const navToResultsPage = () => {
+            const query = encodeURIComponent(elInput.value);
+            window.location.href = `/docs/${docsVersion}/search.html?q=${query}`;
+        }
+
+        const navToResult = () => {
             const searchResultClassName = 'top-banner-search--field-with-results--field--wrapper--search-component--search-results--result';
             const element = elResults.querySelector(`.${searchResultClassName}.highlighted a[href]`);
             if (element) {
