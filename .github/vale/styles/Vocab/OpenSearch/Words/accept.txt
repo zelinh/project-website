@@ -84,8 +84,11 @@ Levenshtein
 [Oo]nboarding
 p\d{2}
 pebibyte
+[Pp]erformant
 [Pp]laintext
 [Pp]luggable
+[Pp]reaggregate(s|d)?
+[Pp]recompute(s|d)?
 [Pp]reconfigure
 [Pp]refetch
 [Pp]refilter
